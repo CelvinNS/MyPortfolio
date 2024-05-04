@@ -12,7 +12,17 @@ body {
   margin: 10px;
   border-radius: 6px;
   background-color: transparent;
+  transition: background-color 0.5s ease-in;
 }
+
+.navbar.scrolled {
+  width: 70%;
+  top: 5px;
+  margin: auto;
+  background-color: #0000006d; /* Atur warna latar belakang ketika di-scroll */
+  
+}
+
 .navbar a{
   color:rgb(255, 255, 255);
   text-decoration: none;
@@ -71,6 +81,7 @@ body {
   border-radius: 6px;
   background-image: url(img/bg_jumbotron/bg-1.png);
   background-size: cover;
+  min-height: 100vh;
 }
 
 .jumbotron .photo-profil{
@@ -82,6 +93,7 @@ body {
 }
 .text{
   padding: 10%;
+  padding-top: 15%;
 }
 
 .text h1{
@@ -112,3 +124,14 @@ body {
 
 
 /* end jumbotron */
+
+/* about me */
+.about-me{
+  margin: 10px;
+  border-radius: 6px;
+}
+
+.about-me h1{
+  text-align: center;
+}
+/* end about me */

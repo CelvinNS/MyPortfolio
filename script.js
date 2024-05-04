@@ -1,3 +1,4 @@
+// animasi text jumbotron
 const texts = ["System Analyst", "Instructor", "Frontend Develover"]; // Daftar teks yang ingin Anda tampilkan
 let count = 0; // Variabel untuk menghitung indeks teks yang sedang ditampilkan
 let index = 0; // Variabel untuk melacak indeks karakter yang sedang ditampilkan
@@ -31,3 +32,13 @@ let letter = ""; // Variabel untuk menyimpan karakter yang sedang ditampilkan
     }
 }());
 
+
+// navbar
+window.addEventListener('scroll', function() {
+    var navbar = document.getElementById('navbar');
+    if (window.scrollY > 0) { // Saat di-scroll
+        navbar.classList.add('scrolled'); // Tambahkan kelas scrolled
+    } else { // Ketika kembali ke atas
+        navbar.classList.remove('scrolled'); // Hapus kelas scrolled
+    }
+});
