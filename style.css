@@ -1,0 +1,114 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Allerta Stencil", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* navbar */
+.navbar{
+  margin: 10px;
+  border-radius: 6px;
+  background-color: transparent;
+}
+.navbar a{
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+}
+.navbar-brand{
+  font-size: 30px;
+  margin-left: 9%;
+  font-family:"Montserrat Alternates", sans-serif;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.navbar-nav{
+  margin-right: 20%;
+ }
+
+ .navbar-nav a:hover {
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.575);
+  color:white;
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(70, 57, 57, 0.464);
+  color: rgb(255, 255, 255);
+  background: linear-gradient(
+    45deg,
+    #f65a0091,
+    #1466d191,
+    #0cbb6a8e,
+    rgba(255, 234, 0, 0.557)
+  );
+  animation: background-color 5s ease infinite;
+  background-size: 400% 400%;
+}
+@keyframes background-color {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* end navbar */
+
+/* jumbotron */
+.jumbotron {
+  margin: 10px;
+  border-radius: 6px;
+  background-image: url(img/bg_jumbotron/bg-1.png);
+  background-size: cover;
+}
+
+.jumbotron .photo-profil{
+  z-index: 999;
+  position:absolute;
+  top: 10%;
+  left: 65%;
+  
+}
+.text{
+  padding: 10%;
+}
+
+.text h1{
+  margin: 0;
+  font-size: 100px;
+}
+
+.text h3{
+  font-size: 40px;
+}
+
+.typing-animation{
+  color: orange;
+  font-family: "Allerta Stencil", sans-serif;
+  border-right: 2px solid white ; /*Simulasi cursor*/
+  white-space: nowrap; /* agar teks tidak melompat ke baris baru */
+  overflow: hidden; /* agar teks tetap dalam elemen */
+}
+
+.text h4{
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 123, 0);
+  width: 23%;
+  padding: 5px;
+  border-radius: 6px;
+  
+}
+
+
+/* end jumbotron */
